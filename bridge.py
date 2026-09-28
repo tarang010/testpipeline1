@@ -1354,7 +1354,7 @@ async def startup_event():
     logger.info(f"  Max queue      : {os.getenv('TARANG_MAX_QUEUE', '20')}")
     logger.info(f"  Mode           : multiprocessing (ProcessPoolExecutor)")
     logger.info(f"  Fix applied    : /extract now returns raw_text for correct splitting")
-    asyncio.create_task(_keep_alive_loop())
+    #asyncio.create_task(_keep_alive_loop())
     logger.info("=" * 60)
 
 
