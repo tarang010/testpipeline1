@@ -14,3 +14,4 @@ edge-tts
 nest_asyncio
 python-dotenv
 gunicorn
+httpx
