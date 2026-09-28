@@ -1319,7 +1319,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 # ── Keep-alive ────────────────────────────────────────────────────────────────
 
-async def _keep_alive_loop():
+'''async def _keep_alive_loop():
     # self_url = os.getenv("SPACE_HOST", os.getenv("RENDER_EXTERNAL_URL", "http://localhost:7860")).rstrip("/")
     self_url = os.getenv(
     "SPACE_HOST",
@@ -1340,7 +1340,7 @@ async def _keep_alive_loop():
             except Exception as e:
                 logger.warning(f"[keep-alive] Ping failed: {e}")
             await asyncio.sleep(interval)
-
+'''
 
 # ── Lifecycle ─────────────────────────────────────────────────────────────────
 
